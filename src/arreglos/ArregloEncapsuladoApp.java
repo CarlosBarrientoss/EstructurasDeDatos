@@ -32,5 +32,21 @@ public class ArregloEncapsuladoApp {
       
       // 3. imprimir los valores del arreglo en pantalla
       arr.mostrarElementos();
+      
+      // 4. buscamos el elemento en el arreglo
+      int valorBuscar = 35;
+      if(arr.buscar(valorBuscar)){
+          System.out.println("Se encontró el valor " + valorBuscar);
+      }else{
+          System.out.println("No se encontró el valor " + valorBuscar); 
+      }
+      
+      // 5. borramos 3 elementos del arreglo
+      arr.eliminar(0);
+      arr.eliminar(55);
+      arr.eliminar(99);
+      
+      // 6. imprimir valores del arreglo
+      arr.mostrarElementos();
     }
 }
